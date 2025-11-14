@@ -1,9 +1,5 @@
 # Archaeological Sites in Iraq
 
-A web application to explore the rich archaeological heritage of Iraq.
-
-![Screenshot of the application](https://place-hold.it/800x600/F2E9E4/4A4E69&text=Application+Screenshot)
-
 ## Features
 
 *   Browse a list of archaeological sites in Iraq.
