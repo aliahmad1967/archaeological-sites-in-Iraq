@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Iraq Hidden Treasures Design System */
+:root {
+  /* Archaeological color palette */
+  --primary: 35 73% 45%; /* Sandy Brown */
+  --primary-glow: 35 85% 65%; /* Bright Sand */
+  --secondary: 25 45% 35%; /* Terracotta */
+  --accent: 15 65% 55%; /* Clay */
+  --background: 45 25% 95%; /* Parchment */
+  --foreground: 25 15% 15%; /* Dark Brown */
+  --muted: 35 20% 85%; /* Light Sand */
+  --muted-foreground: 25 25% 45%; /* Medium Brown */
+  --card: 40 30% 98%; /* Off-white */
+  --card-foreground: 25 15% 20%; /* Dark text */
+  --border: 35 25% 80%; /* Light border */
+  --input: 35 25% 90%; /* Input background */
+  --ring: 35 73% 45%; /* Focus ring */
+  
+  /* Archaeological gradients */
+  --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+  --gradient-ancient: linear-gradient(180deg, hsl(35 40% 85%), hsl(25 35% 75%));
+  --gradient-desert: linear-gradient(45deg, hsl(35 60% 70%), hsl(28 55% 60%));
+  
+  /* Natural shadows */
+  --shadow-archaeological: 0 8px 25px -8px hsl(var(--primary) / 0.25);
+  --shadow-ancient: 0 4px 15px -4px hsl(25 35% 45% / 0.3);
+  --shadow-glow: 0 0 30px hsl(var(--primary-glow) / 0.4);
+  
+  /* Smooth transitions */
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+/* Custom archaeological patterns */
+.archaeological-pattern {
+  background-image: url('https://subtlepatterns.com/patterns/noise.png');
+}
+
+.ancient-texture {
+  background-image: url('https://subtlepatterns.com/patterns/papyrus.png');
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary-glow));
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.1), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Arabic font optimization */
+body {
+  font-family: 'Cairo', 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+  font-feature-settings: "liga" 1, "kern" 1;
+  background-image: url('https://subtlepatterns.com/patterns/noise.png');
+}
+
+[lang="ar"] {
+  font-family: 'Cairo', 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+/* Enhanced button variants */
+.btn-archaeological {
+  background: var(--gradient-primary);
+  color: white;
+  border: 1px solid hsl(var(--primary));
+  box-shadow: var(--shadow-archaeological);
+  transition: var(--transition-smooth);
+}
+
+.btn-archaeological:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+.btn-ancient {
+  background: var(--gradient-ancient);
+  color: hsl(var(--foreground));
+  border: 1px solid hsl(var(--border));
+  transition: var(--transition-bounce);
+}
+
+.btn-ancient:hover {
+  background: var(--gradient-desert);
+  transform: scale(1.05);
+}
+
+.card {
+  background-image: url('https://subtlepatterns.com/patterns/papyrus.png');
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
