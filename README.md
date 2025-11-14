@@ -1,58 +1,44 @@
-# Project Build Guide
+# Archaeological Sites in Iraq
 
-## Tech Stack
+A web application to explore the rich archaeological heritage of Iraq.
 
-This project is built using the following technologies:
+![Screenshot of the application](https://place-hold.it/800x600/F2E9E4/4A4E69&text=Application+Screenshot)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Features
 
-## Prerequisites
+*   Browse a list of archaeological sites in Iraq.
+*   Filter sites by category.
+*   Search for specific sites.
+*   View details about each site, including a description, historical period, and location.
+*   View the location of each site on an interactive map.
+*   Add sites to your favorites.
+*   Share sites with others.
 
-Make sure your system has Node.js and npm installed.
+## Setup and Run
 
-We recommend using nvm to install Node.js: [nvm Installation Guide](https://github.com/nvm-sh/nvm#installing-and-updating)
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/aliahmad1967/archaeological-sites-in-Iraq.git
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd archaeological-sites-in-Iraq
+    ```
+3.  **Install the dependencies:**
+    ```bash
+    npm install
+    ```
+4.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+5.  **Open your browser** and navigate to `http://localhost:5173` (or the address shown in the terminal).
 
-## Install Dependencies
+## Technologies Used
 
-```sh
-npm install
-```
-
-## Development Server
-
-Start the development server with hot reload and instant preview:
-
-```sh
-npm run dev
-```
-
-## Build Project
-
-Build for production:
-
-```sh
-npm run build
-```
-
-## Preview Build
-
-Preview the built project:
-
-```sh
-npm run preview
-```
-
-## Project Structure
-
-```
-src/
-├── components/     # UI Components
-├── pages/         # Page Components
-├── hooks/         # Custom Hooks
-├── lib/           # Utility Library
-└── main.tsx       # Application Entry Point
-```
+*   React
+*   Vite
+*   TypeScript
+*   Tailwind CSS
+*   Leaflet
+*   shadcn/ui
