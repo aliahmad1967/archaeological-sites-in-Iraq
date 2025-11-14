@@ -992,7 +992,7 @@ const Index = () => {
         <section
           className="text-center mb-12 animate-fade-in-up rounded-lg shadow-lg overflow-hidden"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1559128010-44d6dec5d207?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+            backgroundImage: `url('/Generated Image November 14, 2025 - 9_36PM.png')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
